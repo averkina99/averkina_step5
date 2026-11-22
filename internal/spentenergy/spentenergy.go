@@ -56,7 +56,7 @@ func RunningSpentCalories(steps int, weight, height float64, duration time.Durat
 		return 0.0, fmt.Errorf("Рост должен быть больше 0")
 	}
 	if duration <= 0 {
-		return 0.0, fmt.Errorf("Дистанция должена быть больше 0")
+		return 0.0, fmt.Errorf("длительность должна быть больше 0")
 	}
 	if weight <= 0 {
 		return 0.0, fmt.Errorf("Вес должен быть больше 0")

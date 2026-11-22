@@ -23,7 +23,7 @@ func (ds *DaySteps) Parse(datastring string) (err error) {
 	dataArr := strings.Split(datastring, ",")
 
 	if len(dataArr) != 2 {
-		return fmt.Errorf("Некоректный формат входного параметра")
+		return fmt.Errorf("некорректный формат входного параметра")
 	}
 
 	steps, err := strconv.Atoi(dataArr[0])
@@ -41,7 +41,7 @@ func (ds *DaySteps) Parse(datastring string) (err error) {
 	}
 
 	if duration <= 0 {
-		return fmt.Errorf("Дистанция должна быть больше 0")
+		return fmt.Errorf("длительность должна быть больше 0")
 	}
 
 	ds.Steps = steps
